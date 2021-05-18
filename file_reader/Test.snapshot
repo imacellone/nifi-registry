@@ -1,0 +1,166 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ ],
+        "controllerServices" : [ ],
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "5aa70fdf-032a-3397-9d9a-b18db3fc0d44",
+        "inputPorts" : [ ],
+        "labels" : [ ],
+        "name" : "file_reader",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 929.0,
+          "y" : 108.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-poi-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.12.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "5aa70fdf-032a-3397-9d9a-b18db3fc0d44",
+          "identifier" : "c7154e7f-a23b-3d63-bdde-f3cc389a73c8",
+          "name" : "ConvertExcelToCSVProcessor",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 472.0,
+            "y" : 112.0
+          },
+          "properties" : {
+            "excel-extract-first-row" : "0",
+            "CSV Format" : "custom",
+            "Quote Character" : "\"",
+            "Include Header Line" : "true",
+            "Value Separator" : ",",
+            "Record Separator" : "\\n",
+            "Escape Character" : "\\",
+            "excel-format-values" : "false",
+            "Trim Fields" : "true",
+            "Quote Mode" : "NONE",
+            "Include Trailing Delimiter" : "false"
+          },
+          "propertyDescriptors" : {
+            "excel-extract-first-row" : {
+              "displayName" : "Number of Rows to Skip",
+              "identifiesControllerService" : false,
+              "name" : "excel-extract-first-row",
+              "sensitive" : false
+            },
+            "excel-extract-column-to-skip" : {
+              "displayName" : "Columns To Skip",
+              "identifiesControllerService" : false,
+              "name" : "excel-extract-column-to-skip",
+              "sensitive" : false
+            },
+            "CSV Format" : {
+              "displayName" : "CSV Format",
+              "identifiesControllerService" : false,
+              "name" : "CSV Format",
+              "sensitive" : false
+            },
+            "Quote Character" : {
+              "displayName" : "Quote Character",
+              "identifiesControllerService" : false,
+              "name" : "Quote Character",
+              "sensitive" : false
+            },
+            "Include Header Line" : {
+              "displayName" : "Include Header Line",
+              "identifiesControllerService" : false,
+              "name" : "Include Header Line",
+              "sensitive" : false
+            },
+            "Value Separator" : {
+              "displayName" : "Value Separator",
+              "identifiesControllerService" : false,
+              "name" : "Value Separator",
+              "sensitive" : false
+            },
+            "Record Separator" : {
+              "displayName" : "Record Separator",
+              "identifiesControllerService" : false,
+              "name" : "Record Separator",
+              "sensitive" : false
+            },
+            "Escape Character" : {
+              "displayName" : "Escape Character",
+              "identifiesControllerService" : false,
+              "name" : "Escape Character",
+              "sensitive" : false
+            },
+            "extract-sheets" : {
+              "displayName" : "Sheets to Extract",
+              "identifiesControllerService" : false,
+              "name" : "extract-sheets",
+              "sensitive" : false
+            },
+            "excel-format-values" : {
+              "displayName" : "Format Cell Values",
+              "identifiesControllerService" : false,
+              "name" : "excel-format-values",
+              "sensitive" : false
+            },
+            "Null String" : {
+              "displayName" : "Null String",
+              "identifiesControllerService" : false,
+              "name" : "Null String",
+              "sensitive" : false
+            },
+            "Trim Fields" : {
+              "displayName" : "Trim Fields",
+              "identifiesControllerService" : false,
+              "name" : "Trim Fields",
+              "sensitive" : false
+            },
+            "Comment Marker" : {
+              "displayName" : "Comment Marker",
+              "identifiesControllerService" : false,
+              "name" : "Comment Marker",
+              "sensitive" : false
+            },
+            "Quote Mode" : {
+              "displayName" : "Quote Mode",
+              "identifiesControllerService" : false,
+              "name" : "Quote Mode",
+              "sensitive" : false
+            },
+            "Include Trailing Delimiter" : {
+              "displayName" : "Include Trailing Delimiter",
+              "identifiesControllerService" : false,
+              "name" : "Include Trailing Delimiter",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.poi.ConvertExcelToCSVProcessor",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { }
+    }
+  }
+}
