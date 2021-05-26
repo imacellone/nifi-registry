@@ -141,7 +141,7 @@
           },
           "properties" : {
             "excel-extract-first-row" : "1",
-            "CSV Format" : "excel",
+            "CSV Format" : "custom",
             "Quote Character" : "\"",
             "Include Header Line" : "false",
             "Value Separator" : ";",
@@ -274,7 +274,7 @@
           "properties" : {
             "compression.type" : "none",
             "bootstrap.servers" : "kafka-1:9092,kafka-2:9092,kafka-3:9092",
-            "kafka-key" : "(.*?),",
+            "kafka-key" : "(.*?);",
             "sasl.mechanism" : "GSSAPI",
             "max.block.ms" : "5 sec",
             "message-header-encoding" : "UTF-8",
