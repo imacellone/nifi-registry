@@ -37,7 +37,7 @@
           "executionNode" : "ALL",
           "groupIdentifier" : "edc25e22-d4f0-39a6-80d7-b0ed5c92037c",
           "identifier" : "8f79137d-aa29-34b0-a8a2-15a9f6959e39",
-          "name" : "ConsumeKafka_2_0",
+          "name" : "Read Kafka Topic",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 200.0,
