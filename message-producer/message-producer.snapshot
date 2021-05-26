@@ -177,7 +177,7 @@
             "Value Separator" : ",",
             "Record Separator" : "\\n",
             "Escape Character" : "\\",
-            "excel-format-values" : "false",
+            "excel-format-values" : "true",
             "Trim Fields" : "true",
             "Quote Mode" : "NONE",
             "Include Trailing Delimiter" : "false"
