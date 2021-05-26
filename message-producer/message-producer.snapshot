@@ -15,13 +15,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+            "groupId" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
             "id" : "64e839f2-68a1-3037-b875-d76a896e023d",
             "name" : "PublishKafka_2_6",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+          "groupIdentifier" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
           "identifier" : "986aee7a-c946-3093-8be7-083838e9084a",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -32,7 +32,7 @@
           "selectedRelationships" : [ "splits" ],
           "source" : {
             "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+            "groupId" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
             "id" : "265797b5-c852-3b45-a267-253a0f3d99a4",
             "name" : "Split CSV Lines",
             "type" : "PROCESSOR"
@@ -48,13 +48,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+            "groupId" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
             "id" : "2624f415-21a4-3427-a56c-773609c00617",
             "name" : "ConvertExcelToCSVProcessor",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+          "groupIdentifier" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
           "identifier" : "62b1d2c3-0503-3c36-9161-adde3e4a3e26",
           "labelIndex" : 0,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -65,7 +65,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+            "groupId" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
             "id" : "6d9179df-4043-33e2-ad7a-865b584f6d2b",
             "name" : "Read bank.xlsx",
             "type" : "PROCESSOR"
@@ -81,13 +81,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+            "groupId" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
             "id" : "265797b5-c852-3b45-a267-253a0f3d99a4",
             "name" : "Split CSV Lines",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+          "groupIdentifier" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
           "identifier" : "49987b03-31d6-3512-a9d3-df1c8e9341df",
           "labelIndex" : 0,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -98,39 +98,9 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+            "groupId" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
             "id" : "2624f415-21a4-3427-a56c-773609c00617",
             "name" : "ConvertExcelToCSVProcessor",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-            "id" : "976f3977-bb38-3e4b-acc7-a7f702657bc9",
-            "name" : "ReplaceText",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "identifier" : "7b35aa6f-93f9-3de5-a228-313de86bcb7b",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-            "id" : "8ae63b47-4d7d-3c08-9ac5-cef6612d5ac0",
-            "name" : "Convert Timestamp",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -139,14 +109,14 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+        "identifier" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "Leitura Excel",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 361.0,
-          "y" : 26.0
+          "x" : 507.0,
+          "y" : 168.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -161,7 +131,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+          "groupIdentifier" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
           "identifier" : "2624f415-21a4-3427-a56c-773609c00617",
           "name" : "ConvertExcelToCSVProcessor",
           "penaltyDuration" : "30 sec",
@@ -174,7 +144,7 @@
             "CSV Format" : "excel",
             "Quote Character" : "\"",
             "Include Header Line" : "false",
-            "Value Separator" : ",",
+            "Value Separator" : ";",
             "Record Separator" : "\\n",
             "Escape Character" : "\\",
             "excel-format-values" : "true",
@@ -282,86 +252,6 @@
           "type" : "org.apache.nifi.processors.poi.ConvertExcelToCSVProcessor",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "failure" ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.12.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "identifier" : "976f3977-bb38-3e4b-acc7-a7f702657bc9",
-          "name" : "ReplaceText",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 2008.0,
-            "y" : 96.0
-          },
-          "properties" : {
-            "Regular Expression" : "(?s:^.*$)",
-            "Replacement Value" : "insert into sensor_data (station_id, sensor_id, tps, val) values ('${station.name}', '${sensor.name}', '${tps}', ${column.2})",
-            "Evaluation Mode" : "Entire text",
-            "Line-by-Line Evaluation Mode" : "All",
-            "Character Set" : "UTF-8",
-            "Maximum Buffer Size" : "1 MB",
-            "Replacement Strategy" : "Regex Replace"
-          },
-          "propertyDescriptors" : {
-            "Regular Expression" : {
-              "displayName" : "Search Value",
-              "identifiesControllerService" : false,
-              "name" : "Regular Expression",
-              "sensitive" : false
-            },
-            "Replacement Value" : {
-              "displayName" : "Replacement Value",
-              "identifiesControllerService" : false,
-              "name" : "Replacement Value",
-              "sensitive" : false
-            },
-            "Evaluation Mode" : {
-              "displayName" : "Evaluation Mode",
-              "identifiesControllerService" : false,
-              "name" : "Evaluation Mode",
-              "sensitive" : false
-            },
-            "Line-by-Line Evaluation Mode" : {
-              "displayName" : "Line-by-Line Evaluation Mode",
-              "identifiesControllerService" : false,
-              "name" : "Line-by-Line Evaluation Mode",
-              "sensitive" : false
-            },
-            "Character Set" : {
-              "displayName" : "Character Set",
-              "identifiesControllerService" : false,
-              "name" : "Character Set",
-              "sensitive" : false
-            },
-            "Maximum Buffer Size" : {
-              "displayName" : "Maximum Buffer Size",
-              "identifiesControllerService" : false,
-              "name" : "Maximum Buffer Size",
-              "sensitive" : false
-            },
-            "Replacement Strategy" : {
-              "displayName" : "Replacement Strategy",
-              "identifiesControllerService" : false,
-              "name" : "Replacement Strategy",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.ReplaceText",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ "success", "failure" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -373,7 +263,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+          "groupIdentifier" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
           "identifier" : "64e839f2-68a1-3037-b875-d76a896e023d",
           "name" : "PublishKafka_2_6",
           "penaltyDuration" : "30 sec",
@@ -564,184 +454,6 @@
           "type" : "org.apache.nifi.processors.kafka.pubsub.PublishKafka_2_6",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "unmatched" ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-standard-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.12.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "identifier" : "2ee315f9-33c8-3daa-9e2f-06ee8d6539a3",
-          "name" : "Extract Column Values",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 1512.0,
-            "y" : 200.0
-          },
-          "properties" : {
-            "Enable Unicode Predefined Character Classes" : "false",
-            "transaction_date" : ".*?,(.*?),",
-            "Permit Whitespace and Comments in Pattern" : "false",
-            "account_number" : "(.*?),",
-            "Enable Unicode-aware Case Folding" : "false",
-            "withdrawal_value" : "^.*,.*,.*,(.*),",
-            "cheque_number" : "^.*,.*,(.*),.*,",
-            "Enable DOTALL Mode" : "false",
-            "Enable Unix Lines Mode" : "false",
-            "Maximum Buffer Size" : "1 MB",
-            "Enable Canonical Equivalence" : "false",
-            "balance_value" : "^.*,.*,.*,.*,.*,(.*),",
-            "Enable Case-insensitive Matching" : "false",
-            "deposit_value" : "^.*,.*,.*,.*,(.*),",
-            "Enable Multiline Mode" : "false",
-            "Maximum Capture Group Length" : "1024",
-            "Enable Literal Parsing of the Pattern" : "false",
-            "details" : ",.*?,(.*?),",
-            "Character Set" : "UTF-8",
-            "Include Capture Group 0" : "true",
-            "extract-text-enable-repeating-capture-group" : "false"
-          },
-          "propertyDescriptors" : {
-            "Enable Unicode Predefined Character Classes" : {
-              "displayName" : "Enable Unicode Predefined Character Classes",
-              "identifiesControllerService" : false,
-              "name" : "Enable Unicode Predefined Character Classes",
-              "sensitive" : false
-            },
-            "transaction_date" : {
-              "displayName" : "transaction_date",
-              "identifiesControllerService" : false,
-              "name" : "transaction_date",
-              "sensitive" : false
-            },
-            "Permit Whitespace and Comments in Pattern" : {
-              "displayName" : "Permit Whitespace and Comments in Pattern",
-              "identifiesControllerService" : false,
-              "name" : "Permit Whitespace and Comments in Pattern",
-              "sensitive" : false
-            },
-            "account_number" : {
-              "displayName" : "account_number",
-              "identifiesControllerService" : false,
-              "name" : "account_number",
-              "sensitive" : false
-            },
-            "Enable Unicode-aware Case Folding" : {
-              "displayName" : "Enable Unicode-aware Case Folding",
-              "identifiesControllerService" : false,
-              "name" : "Enable Unicode-aware Case Folding",
-              "sensitive" : false
-            },
-            "withdrawal_value" : {
-              "displayName" : "withdrawal_value",
-              "identifiesControllerService" : false,
-              "name" : "withdrawal_value",
-              "sensitive" : false
-            },
-            "cheque_number" : {
-              "displayName" : "cheque_number",
-              "identifiesControllerService" : false,
-              "name" : "cheque_number",
-              "sensitive" : false
-            },
-            "Enable DOTALL Mode" : {
-              "displayName" : "Enable DOTALL Mode",
-              "identifiesControllerService" : false,
-              "name" : "Enable DOTALL Mode",
-              "sensitive" : false
-            },
-            "Enable Unix Lines Mode" : {
-              "displayName" : "Enable Unix Lines Mode",
-              "identifiesControllerService" : false,
-              "name" : "Enable Unix Lines Mode",
-              "sensitive" : false
-            },
-            "Maximum Buffer Size" : {
-              "displayName" : "Maximum Buffer Size",
-              "identifiesControllerService" : false,
-              "name" : "Maximum Buffer Size",
-              "sensitive" : false
-            },
-            "Enable Canonical Equivalence" : {
-              "displayName" : "Enable Canonical Equivalence",
-              "identifiesControllerService" : false,
-              "name" : "Enable Canonical Equivalence",
-              "sensitive" : false
-            },
-            "balance_value" : {
-              "displayName" : "balance_value",
-              "identifiesControllerService" : false,
-              "name" : "balance_value",
-              "sensitive" : false
-            },
-            "Enable Case-insensitive Matching" : {
-              "displayName" : "Enable Case-insensitive Matching",
-              "identifiesControllerService" : false,
-              "name" : "Enable Case-insensitive Matching",
-              "sensitive" : false
-            },
-            "deposit_value" : {
-              "displayName" : "deposit_value",
-              "identifiesControllerService" : false,
-              "name" : "deposit_value",
-              "sensitive" : false
-            },
-            "Enable Multiline Mode" : {
-              "displayName" : "Enable Multiline Mode",
-              "identifiesControllerService" : false,
-              "name" : "Enable Multiline Mode",
-              "sensitive" : false
-            },
-            "Maximum Capture Group Length" : {
-              "displayName" : "Maximum Capture Group Length",
-              "identifiesControllerService" : false,
-              "name" : "Maximum Capture Group Length",
-              "sensitive" : false
-            },
-            "Enable Literal Parsing of the Pattern" : {
-              "displayName" : "Enable Literal Parsing of the Pattern",
-              "identifiesControllerService" : false,
-              "name" : "Enable Literal Parsing of the Pattern",
-              "sensitive" : false
-            },
-            "details" : {
-              "displayName" : "details",
-              "identifiesControllerService" : false,
-              "name" : "details",
-              "sensitive" : false
-            },
-            "Character Set" : {
-              "displayName" : "Character Set",
-              "identifiesControllerService" : false,
-              "name" : "Character Set",
-              "sensitive" : false
-            },
-            "Include Capture Group 0" : {
-              "displayName" : "Include Capture Group 0",
-              "identifiesControllerService" : false,
-              "name" : "Include Capture Group 0",
-              "sensitive" : false
-            },
-            "extract-text-enable-repeating-capture-group" : {
-              "displayName" : "Enable repeating capture group",
-              "identifiesControllerService" : false,
-              "name" : "extract-text-enable-repeating-capture-group",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.standard.ExtractText",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ "original", "failure" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -753,7 +465,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+          "groupIdentifier" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
           "identifier" : "265797b5-c852-3b45-a267-253a0f3d99a4",
           "name" : "Split CSV Lines",
           "penaltyDuration" : "30 sec",
@@ -809,70 +521,6 @@
           "autoTerminatedRelationships" : [ ],
           "bulletinLevel" : "WARN",
           "bundle" : {
-            "artifact" : "nifi-update-attribute-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.12.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "identifier" : "8ae63b47-4d7d-3c08-9ac5-cef6612d5ac0",
-          "name" : "Convert Timestamp",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 1440.0,
-            "y" : -56.0
-          },
-          "properties" : {
-            "Store State" : "Do not store state",
-            "canonical-value-lookup-cache-size" : "100",
-            "tps" : "${column.1:toDate('yyyy-MM-dd HH:mm:ss.SSSSSSZ'):format('yyyy-MM-dd HH:mm:ss.SSSZ')}"
-          },
-          "propertyDescriptors" : {
-            "Delete Attributes Expression" : {
-              "displayName" : "Delete Attributes Expression",
-              "identifiesControllerService" : false,
-              "name" : "Delete Attributes Expression",
-              "sensitive" : false
-            },
-            "Store State" : {
-              "displayName" : "Store State",
-              "identifiesControllerService" : false,
-              "name" : "Store State",
-              "sensitive" : false
-            },
-            "canonical-value-lookup-cache-size" : {
-              "displayName" : "Cache Value Lookup Cache Size",
-              "identifiesControllerService" : false,
-              "name" : "canonical-value-lookup-cache-size",
-              "sensitive" : false
-            },
-            "tps" : {
-              "displayName" : "tps",
-              "identifiesControllerService" : false,
-              "name" : "tps",
-              "sensitive" : false
-            },
-            "Stateful Variables Initial Value" : {
-              "displayName" : "Stateful Variables Initial Value",
-              "identifiesControllerService" : false,
-              "name" : "Stateful Variables Initial Value",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : { },
-          "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
-          "yieldDuration" : "1 sec"
-        }, {
-          "autoTerminatedRelationships" : [ ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
             "artifact" : "nifi-standard-nar",
             "group" : "org.apache.nifi",
             "version" : "1.12.1"
@@ -881,7 +529,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+          "groupIdentifier" : "7d738cec-4d7a-3b30-8ddc-2ee3f6eada15",
           "identifier" : "6d9179df-4043-33e2-ad7a-865b584f6d2b",
           "name" : "Read bank.xlsx",
           "penaltyDuration" : "30 sec",
