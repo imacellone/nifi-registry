@@ -870,8 +870,8 @@
           "name" : "ExecuteScript",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 927.4999999999999,
-            "y" : 674.7600114440918
+            "x" : 968.0,
+            "y" : 680.0
           },
           "properties" : {
             "Script Engine" : "Groovy",
