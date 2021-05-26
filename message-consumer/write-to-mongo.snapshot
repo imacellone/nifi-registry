@@ -136,15 +136,15 @@
           "name" : "PutMongo",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1120.0,
-            "y" : 536.0
+            "x" : 680.0,
+            "y" : 592.0
           },
           "properties" : {
             "Upsert" : "false",
             "ssl-client-auth" : "REQUIRED",
             "Mode" : "insert",
             "Mongo Database Name" : "banking",
-            "Mongo URI" : "mongodb:27017",
+            "Mongo URI" : "mongodb://mongodb:27017",
             "Mongo Collection Name" : "transactions",
             "put-mongo-update-mode" : "doc",
             "Write Concern" : "ACKNOWLEDGED",
@@ -258,7 +258,7 @@
             "y" : 344.0
           },
           "properties" : {
-            "Destination" : "flowfile-attribute",
+            "Destination" : "flowfile-content",
             "Null Value" : "true",
             "Attributes List" : "account_number,transaction_date,details,cheque_number,withdrawal_value,deposit_value,balance_value",
             "Include Core Attributes" : "false"
