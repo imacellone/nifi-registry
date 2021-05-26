@@ -11,8 +11,38 @@
         "connections" : [ {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+            "id" : "64e839f2-68a1-3037-b875-d76a896e023d",
+            "name" : "PublishKafka_2_6",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+          "identifier" : "986aee7a-c946-3093-8be7-083838e9084a",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "splits" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+            "id" : "265797b5-c852-3b45-a267-253a0f3d99a4",
+            "name" : "Split CSV Lines",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 928.0,
+            "x" : 608.0,
             "y" : 56.0
           } ],
           "componentType" : "CONNECTION",
@@ -42,104 +72,11 @@
           },
           "zIndex" : 0
         }, {
-          "backPressureDataSizeThreshold" : "0 MB",
-          "backPressureObjectThreshold" : 0,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-            "id" : "a9c8ebac-8b96-3b7b-bef9-90bbfc0c1a16",
-            "name" : "PutCassandraQL",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "identifier" : "556512da-f767-37c5-affc-73f54d8a8f00",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-            "id" : "ac553caa-061a-3f73-bb21-49c6dfc73185",
-            "name" : "ExecuteScript",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
           "bends" : [ {
-            "x" : 296.0,
+            "x" : 600.0,
             "y" : 296.0
-          } ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-            "id" : "2ee315f9-33c8-3daa-9e2f-06ee8d6539a3",
-            "name" : "Extract Column Values",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "identifier" : "34315b0e-8984-3da8-ad5b-4105a6b57498",
-          "labelIndex" : 0,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "splits" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-            "id" : "265797b5-c852-3b45-a267-253a0f3d99a4",
-            "name" : "Split CSV Lines",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-            "id" : "a9c8ebac-8b96-3b7b-bef9-90bbfc0c1a16",
-            "name" : "PutCassandraQL",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "identifier" : "899183fb-a067-3dc3-b980-13818cc23954",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "success" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-            "id" : "976f3977-bb38-3e4b-acc7-a7f702657bc9",
-            "name" : "ReplaceText",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ {
-            "x" : 928.0,
-            "y" : 128.0
           } ],
           "componentType" : "CONNECTION",
           "destination" : {
@@ -164,39 +101,6 @@
             "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
             "id" : "2624f415-21a4-3427-a56c-773609c00617",
             "name" : "ConvertExcelToCSVProcessor",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
-          "bends" : [ {
-            "x" : 920.0,
-            "y" : 288.0
-          } ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-            "id" : "8ae63b47-4d7d-3c08-9ac5-cef6612d5ac0",
-            "name" : "Convert Timestamp",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "identifier" : "85f5e34e-39c6-312a-b864-18245f4a21cd",
-          "labelIndex" : 0,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "matched" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-            "id" : "2ee315f9-33c8-3daa-9e2f-06ee8d6539a3",
-            "name" : "Extract Column Values",
             "type" : "PROCESSOR"
           },
           "zIndex" : 0
@@ -237,77 +141,7 @@
         "funnels" : [ ],
         "identifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
         "inputPorts" : [ ],
-        "labels" : [ {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "height" : 94.0,
-          "identifier" : "f547dd19-bc0f-312b-9592-254b39a36ee9",
-          "label" : "Creates the keyspace, drops the table,\nand creates the table. This is a helper\nfor the example flow, should only be run\nonce before the rest of the flow, and can\nbe removed if the keyspace and table exist.\n<--",
-          "position" : {
-            "x" : 1309.9999917116438,
-            "y" : 694.1400005203105
-          },
-          "style" : {
-            "font-size" : "12px"
-          },
-          "width" : 246.99996948242188
-        }, {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "height" : 48.000003814697266,
-          "identifier" : "b3fbdf3b-ac9e-339b-95b4-5242e3f77767",
-          "label" : "Uses regular expressions to\ngroup the columns\n<--",
-          "position" : {
-            "x" : 256.0,
-            "y" : 424.0
-          },
-          "style" : {
-            "font-size" : "12px"
-          },
-          "width" : 172.99996948242188
-        }, {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "height" : 73.0,
-          "identifier" : "696d96b2-e35a-3273-9f99-ef87d7a87110",
-          "label" : "Builds a CQL INSERT statement with\nexplicit values. Also could use UpdateAttribute\nin order to use prepared statements.\n<--",
-          "position" : {
-            "x" : 1458.9999917116438,
-            "y" : 256.1400005203105
-          },
-          "style" : {
-            "font-size" : "12px"
-          },
-          "width" : 271.9999694824219
-        }, {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "height" : 61.0,
-          "identifier" : "06786eab-5794-3e82-aaa1-f64836d76934",
-          "label" : "This attempts to strip the microseconds\nfrom the timestamp, but ends up truncating\nall fractional seconds.\n<--",
-          "position" : {
-            "x" : 1460.9999917116438,
-            "y" : 11.140004335007745
-          },
-          "style" : {
-            "font-size" : "12px"
-          },
-          "width" : 243.99996948242188
-        }, {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "height" : 48.000003814697266,
-          "identifier" : "0cb56f54-77e9-3d7f-b09e-0559f3e7c2c3",
-          "label" : "Executes the CQL statements\n(INSERT or DDL)\n<--",
-          "position" : {
-            "x" : 1463.9999917116438,
-            "y" : 498.14000052031054
-          },
-          "style" : {
-            "font-size" : "12px"
-          },
-          "width" : 174.99996948242188
-        } ],
+        "labels" : [ ],
         "name" : "Leitura Excel",
         "outputPorts" : [ ],
         "position" : {
@@ -316,120 +150,6 @@
         },
         "processGroups" : [ ],
         "processors" : [ {
-          "autoTerminatedRelationships" : [ "success", "failure", "retry" ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-cassandra-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.12.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "identifier" : "a9c8ebac-8b96-3b7b-bef9-90bbfc0c1a16",
-          "name" : "PutCassandraQL",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 1079.0,
-            "y" : 459.73999618530274
-          },
-          "properties" : {
-            "Username" : "cassandra",
-            "Max Wait Time" : "0 seconds",
-            "Consistency Level" : "ONE",
-            "Compression Type" : "NONE",
-            "Keyspace" : "data",
-            "Client Auth" : "REQUIRED",
-            "Character Set" : "UTF-8",
-            "Cassandra Contact Points" : "127.0.0.1:9042",
-            "putcql-stmt-cache-size" : "0"
-          },
-          "propertyDescriptors" : {
-            "SSL Context Service" : {
-              "displayName" : "SSL Context Service",
-              "identifiesControllerService" : true,
-              "name" : "SSL Context Service",
-              "sensitive" : false
-            },
-            "Username" : {
-              "displayName" : "Username",
-              "identifiesControllerService" : false,
-              "name" : "Username",
-              "sensitive" : false
-            },
-            "Max Wait Time" : {
-              "displayName" : "Max Wait Time",
-              "identifiesControllerService" : false,
-              "name" : "Max Wait Time",
-              "sensitive" : false
-            },
-            "Consistency Level" : {
-              "displayName" : "Consistency Level",
-              "identifiesControllerService" : false,
-              "name" : "Consistency Level",
-              "sensitive" : false
-            },
-            "Compression Type" : {
-              "displayName" : "Compression Type",
-              "identifiesControllerService" : false,
-              "name" : "Compression Type",
-              "sensitive" : false
-            },
-            "Keyspace" : {
-              "displayName" : "Keyspace",
-              "identifiesControllerService" : false,
-              "name" : "Keyspace",
-              "sensitive" : false
-            },
-            "cassandra-connection-provider" : {
-              "displayName" : "Cassandra Connection Provider",
-              "identifiesControllerService" : true,
-              "name" : "cassandra-connection-provider",
-              "sensitive" : false
-            },
-            "Client Auth" : {
-              "displayName" : "Client Auth",
-              "identifiesControllerService" : false,
-              "name" : "Client Auth",
-              "sensitive" : false
-            },
-            "Character Set" : {
-              "displayName" : "Character Set",
-              "identifiesControllerService" : false,
-              "name" : "Character Set",
-              "sensitive" : false
-            },
-            "Cassandra Contact Points" : {
-              "displayName" : "Cassandra Contact Points",
-              "identifiesControllerService" : false,
-              "name" : "Cassandra Contact Points",
-              "sensitive" : false
-            },
-            "Password" : {
-              "displayName" : "Password",
-              "identifiesControllerService" : false,
-              "name" : "Password",
-              "sensitive" : true
-            },
-            "putcql-stmt-cache-size" : {
-              "displayName" : "Statement Cache Size",
-              "identifiesControllerService" : false,
-              "name" : "putcql-stmt-cache-size",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "0 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : {
-            "background-color" : "#6febb9"
-          },
-          "type" : "org.apache.nifi.processors.cassandra.PutCassandraQL",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ "original", "failure" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -446,8 +166,8 @@
           "name" : "ConvertExcelToCSVProcessor",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 432.0,
-            "y" : 56.0
+            "x" : 424.0,
+            "y" : 112.0
           },
           "properties" : {
             "excel-extract-first-row" : "0",
@@ -578,8 +298,8 @@
           "name" : "ReplaceText",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1077.0,
-            "y" : 232.99999618530273
+            "x" : 2008.0,
+            "y" : 96.0
           },
           "properties" : {
             "Regular Expression" : "(?s:^.*$)",
@@ -642,6 +362,208 @@
           "type" : "org.apache.nifi.processors.standard.ReplaceText",
           "yieldDuration" : "1 sec"
         }, {
+          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-kafka-2-6-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.12.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
+          "identifier" : "64e839f2-68a1-3037-b875-d76a896e023d",
+          "name" : "PublishKafka_2_6",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 424.0,
+            "y" : 632.0
+          },
+          "properties" : {
+            "compression.type" : "none",
+            "bootstrap.servers" : "kafka-1:9092,kafka-2:9092,kafka-3:9092",
+            "kafka-key" : "(.*?),",
+            "sasl.mechanism" : "GSSAPI",
+            "max.block.ms" : "5 sec",
+            "message-header-encoding" : "UTF-8",
+            "ack.wait.time" : "5 secs",
+            "use-transactions" : "true",
+            "acks" : "all",
+            "security.protocol" : "PLAINTEXT",
+            "max.request.size" : "1 MB",
+            "sasl.token.auth" : "false",
+            "partitioner.class" : "org.apache.kafka.clients.producer.internals.DefaultPartitioner",
+            "topic" : "transactions",
+            "key-attribute-encoding" : "utf-8"
+          },
+          "propertyDescriptors" : {
+            "compression.type" : {
+              "displayName" : "Compression Type",
+              "identifiesControllerService" : false,
+              "name" : "compression.type",
+              "sensitive" : false
+            },
+            "attribute-name-regex" : {
+              "displayName" : "Attributes to Send as Headers (Regex)",
+              "identifiesControllerService" : false,
+              "name" : "attribute-name-regex",
+              "sensitive" : false
+            },
+            "bootstrap.servers" : {
+              "displayName" : "Kafka Brokers",
+              "identifiesControllerService" : false,
+              "name" : "bootstrap.servers",
+              "sensitive" : false
+            },
+            "sasl.kerberos.principal" : {
+              "displayName" : "Kerberos Principal",
+              "identifiesControllerService" : false,
+              "name" : "sasl.kerberos.principal",
+              "sensitive" : false
+            },
+            "sasl.kerberos.service.name" : {
+              "displayName" : "Kerberos Service Name",
+              "identifiesControllerService" : false,
+              "name" : "sasl.kerberos.service.name",
+              "sensitive" : false
+            },
+            "kerberos-credentials-service" : {
+              "displayName" : "Kerberos Credentials Service",
+              "identifiesControllerService" : true,
+              "name" : "kerberos-credentials-service",
+              "sensitive" : false
+            },
+            "kafka-key" : {
+              "displayName" : "Kafka Key",
+              "identifiesControllerService" : false,
+              "name" : "kafka-key",
+              "sensitive" : false
+            },
+            "partition" : {
+              "displayName" : "Partition",
+              "identifiesControllerService" : false,
+              "name" : "partition",
+              "sensitive" : false
+            },
+            "sasl.mechanism" : {
+              "displayName" : "SASL Mechanism",
+              "identifiesControllerService" : false,
+              "name" : "sasl.mechanism",
+              "sensitive" : false
+            },
+            "max.block.ms" : {
+              "displayName" : "Max Metadata Wait Time",
+              "identifiesControllerService" : false,
+              "name" : "max.block.ms",
+              "sensitive" : false
+            },
+            "message-header-encoding" : {
+              "displayName" : "Message Header Encoding",
+              "identifiesControllerService" : false,
+              "name" : "message-header-encoding",
+              "sensitive" : false
+            },
+            "message-demarcator" : {
+              "displayName" : "Message Demarcator",
+              "identifiesControllerService" : false,
+              "name" : "message-demarcator",
+              "sensitive" : false
+            },
+            "transactional-id-prefix" : {
+              "displayName" : "Transactional Id Prefix",
+              "identifiesControllerService" : false,
+              "name" : "transactional-id-prefix",
+              "sensitive" : false
+            },
+            "ack.wait.time" : {
+              "displayName" : "Acknowledgment Wait Time",
+              "identifiesControllerService" : false,
+              "name" : "ack.wait.time",
+              "sensitive" : false
+            },
+            "sasl.username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "sasl.username",
+              "sensitive" : false
+            },
+            "use-transactions" : {
+              "displayName" : "Use Transactions",
+              "identifiesControllerService" : false,
+              "name" : "use-transactions",
+              "sensitive" : false
+            },
+            "acks" : {
+              "displayName" : "Delivery Guarantee",
+              "identifiesControllerService" : false,
+              "name" : "acks",
+              "sensitive" : false
+            },
+            "security.protocol" : {
+              "displayName" : "Security Protocol",
+              "identifiesControllerService" : false,
+              "name" : "security.protocol",
+              "sensitive" : false
+            },
+            "ssl.context.service" : {
+              "displayName" : "SSL Context Service",
+              "identifiesControllerService" : true,
+              "name" : "ssl.context.service",
+              "sensitive" : false
+            },
+            "max.request.size" : {
+              "displayName" : "Max Request Size",
+              "identifiesControllerService" : false,
+              "name" : "max.request.size",
+              "sensitive" : false
+            },
+            "sasl.token.auth" : {
+              "displayName" : "Token Auth",
+              "identifiesControllerService" : false,
+              "name" : "sasl.token.auth",
+              "sensitive" : false
+            },
+            "partitioner.class" : {
+              "displayName" : "Partitioner class",
+              "identifiesControllerService" : false,
+              "name" : "partitioner.class",
+              "sensitive" : false
+            },
+            "sasl.kerberos.keytab" : {
+              "displayName" : "Kerberos Keytab",
+              "identifiesControllerService" : false,
+              "name" : "sasl.kerberos.keytab",
+              "sensitive" : false
+            },
+            "topic" : {
+              "displayName" : "Topic Name",
+              "identifiesControllerService" : false,
+              "name" : "topic",
+              "sensitive" : false
+            },
+            "sasl.password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "sasl.password",
+              "sensitive" : true
+            },
+            "key-attribute-encoding" : {
+              "displayName" : "Key Attribute Encoding",
+              "identifiesControllerService" : false,
+              "name" : "key-attribute-encoding",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.kafka.pubsub.PublishKafka_2_6",
+          "yieldDuration" : "1 sec"
+        }, {
           "autoTerminatedRelationships" : [ "unmatched" ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -658,8 +580,8 @@
           "name" : "Extract Column Values",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 440.0,
-            "y" : 392.0
+            "x" : 1512.0,
+            "y" : 200.0
           },
           "properties" : {
             "Enable Unicode Predefined Character Classes" : "false",
@@ -836,8 +758,8 @@
           "name" : "Split CSV Lines",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 432.0,
-            "y" : 216.0
+            "x" : 424.0,
+            "y" : 360.0
           },
           "properties" : {
             "Remove Trailing Newlines" : "true",
@@ -900,8 +822,8 @@
           "name" : "Convert Timestamp",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 1080.0,
-            "y" : -13.0
+            "x" : 1440.0,
+            "y" : -56.0
           },
           "properties" : {
             "Store State" : "Do not store state",
@@ -948,65 +870,6 @@
           "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
           "yieldDuration" : "1 sec"
         }, {
-          "autoTerminatedRelationships" : [ "failure" ],
-          "bulletinLevel" : "WARN",
-          "bundle" : {
-            "artifact" : "nifi-scripting-nar",
-            "group" : "org.apache.nifi",
-            "version" : "1.12.1"
-          },
-          "comments" : "",
-          "componentType" : "PROCESSOR",
-          "concurrentlySchedulableTaskCount" : 1,
-          "executionNode" : "ALL",
-          "groupIdentifier" : "22b6d5f1-b157-3df0-b449-e298f23f0262",
-          "identifier" : "ac553caa-061a-3f73-bb21-49c6dfc73185",
-          "name" : "ExecuteScript",
-          "penaltyDuration" : "30 sec",
-          "position" : {
-            "x" : 1080.0,
-            "y" : 680.0
-          },
-          "properties" : {
-            "Script Engine" : "Groovy",
-            "Script Body" : "DDL = \n\"\"\"CREATE KEYSPACE IF NOT EXISTS data with replication = {'class' : 'SimpleStrategy', 'replication_factor' : 3};\n   DROP TABLE IF EXISTS sensor_data;\n   CREATE TABLE sensor_data (station_id text, sensor_id text, tps timestamp, val float, PRIMARY KEY ((station_id, sensor_id), tps));\n\"\"\"\n\nDDL.eachLine { ddl ->\n      flowFile = session.create()\n      flowFile = session.write(flowFile, { outStream ->\n        outStream.write(ddl.getBytes('UTF-8'))\n    } as OutputStreamCallback)\n    session.transfer(flowFile, REL_SUCCESS)\n}"
-          },
-          "propertyDescriptors" : {
-            "Script File" : {
-              "displayName" : "Script File",
-              "identifiesControllerService" : false,
-              "name" : "Script File",
-              "sensitive" : false
-            },
-            "Script Engine" : {
-              "displayName" : "Script Engine",
-              "identifiesControllerService" : false,
-              "name" : "Script Engine",
-              "sensitive" : false
-            },
-            "Script Body" : {
-              "displayName" : "Script Body",
-              "identifiesControllerService" : false,
-              "name" : "Script Body",
-              "sensitive" : false
-            },
-            "Module Directory" : {
-              "displayName" : "Module Directory",
-              "identifiesControllerService" : false,
-              "name" : "Module Directory",
-              "sensitive" : false
-            }
-          },
-          "runDurationMillis" : 0,
-          "scheduledState" : "ENABLED",
-          "schedulingPeriod" : "60 sec",
-          "schedulingStrategy" : "TIMER_DRIVEN",
-          "style" : {
-            "background-color" : "#000000"
-          },
-          "type" : "org.apache.nifi.processors.script.ExecuteScript",
-          "yieldDuration" : "1 sec"
-        }, {
           "autoTerminatedRelationships" : [ ],
           "bulletinLevel" : "WARN",
           "bundle" : {
@@ -1023,8 +886,8 @@
           "name" : "Read bank.xlsx",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 432.0,
-            "y" : -88.0
+            "x" : 440.0,
+            "y" : -136.0
           },
           "properties" : {
             "Keep Source File" : "true",
