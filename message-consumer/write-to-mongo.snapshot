@@ -1,0 +1,329 @@
+{
+  "header" : {
+    "dataModelVersion" : "3"
+  },
+  "content" : {
+    "flowSnapshot" : {
+      "externalControllerServices" : { },
+      "flowContents" : {
+        "comments" : "",
+        "componentType" : "PROCESS_GROUP",
+        "connections" : [ {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "87a77e23-afa2-3187-828a-1aa9feee56b6",
+            "id" : "58255941-b3d4-316c-b5cf-6245cc21181b",
+            "name" : "PutFile",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "87a77e23-afa2-3187-828a-1aa9feee56b6",
+          "identifier" : "6ea60f88-987b-304f-8c17-9f379e2a167e",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ "org.apache.nifi.prioritizer.FirstInFirstOutPrioritizer" ],
+          "selectedRelationships" : [ "success" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "87a77e23-afa2-3187-828a-1aa9feee56b6",
+            "id" : "8f79137d-aa29-34b0-a8a2-15a9f6959e39",
+            "name" : "ConsumeKafka_2_0",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        } ],
+        "controllerServices" : [ ],
+        "flowFileConcurrency" : "UNBOUNDED",
+        "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
+        "funnels" : [ ],
+        "identifier" : "87a77e23-afa2-3187-828a-1aa9feee56b6",
+        "inputPorts" : [ ],
+        "labels" : [ ],
+        "name" : "Escrever no Mongo",
+        "outputPorts" : [ ],
+        "position" : {
+          "x" : 499.0,
+          "y" : 129.0
+        },
+        "processGroups" : [ ],
+        "processors" : [ {
+          "autoTerminatedRelationships" : [ "success", "failure" ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-standard-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.12.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "87a77e23-afa2-3187-828a-1aa9feee56b6",
+          "identifier" : "58255941-b3d4-316c-b5cf-6245cc21181b",
+          "name" : "PutFile",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 1080.0,
+            "y" : 192.0
+          },
+          "properties" : {
+            "Create Missing Directories" : "true",
+            "Directory" : "/opt/nifi/nifi-current/input",
+            "Conflict Resolution Strategy" : "replace"
+          },
+          "propertyDescriptors" : {
+            "Group" : {
+              "displayName" : "Group",
+              "identifiesControllerService" : false,
+              "name" : "Group",
+              "sensitive" : false
+            },
+            "Owner" : {
+              "displayName" : "Owner",
+              "identifiesControllerService" : false,
+              "name" : "Owner",
+              "sensitive" : false
+            },
+            "Create Missing Directories" : {
+              "displayName" : "Create Missing Directories",
+              "identifiesControllerService" : false,
+              "name" : "Create Missing Directories",
+              "sensitive" : false
+            },
+            "Permissions" : {
+              "displayName" : "Permissions",
+              "identifiesControllerService" : false,
+              "name" : "Permissions",
+              "sensitive" : false
+            },
+            "Maximum File Count" : {
+              "displayName" : "Maximum File Count",
+              "identifiesControllerService" : false,
+              "name" : "Maximum File Count",
+              "sensitive" : false
+            },
+            "Last Modified Time" : {
+              "displayName" : "Last Modified Time",
+              "identifiesControllerService" : false,
+              "name" : "Last Modified Time",
+              "sensitive" : false
+            },
+            "Directory" : {
+              "displayName" : "Directory",
+              "identifiesControllerService" : false,
+              "name" : "Directory",
+              "sensitive" : false
+            },
+            "Conflict Resolution Strategy" : {
+              "displayName" : "Conflict Resolution Strategy",
+              "identifiesControllerService" : false,
+              "name" : "Conflict Resolution Strategy",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.standard.PutFile",
+          "yieldDuration" : "1 sec"
+        }, {
+          "autoTerminatedRelationships" : [ ],
+          "bulletinLevel" : "WARN",
+          "bundle" : {
+            "artifact" : "nifi-kafka-2-0-nar",
+            "group" : "org.apache.nifi",
+            "version" : "1.12.1"
+          },
+          "comments" : "",
+          "componentType" : "PROCESSOR",
+          "concurrentlySchedulableTaskCount" : 1,
+          "executionNode" : "ALL",
+          "groupIdentifier" : "87a77e23-afa2-3187-828a-1aa9feee56b6",
+          "identifier" : "8f79137d-aa29-34b0-a8a2-15a9f6959e39",
+          "name" : "ConsumeKafka_2_0",
+          "penaltyDuration" : "30 sec",
+          "position" : {
+            "x" : 200.0,
+            "y" : 192.0
+          },
+          "properties" : {
+            "max.poll.records" : "10000",
+            "group.id" : "mongo-consumer",
+            "bootstrap.servers" : "kafka-1:9092,kafka-2:9092,kafka-3:9092",
+            "topic_type" : "names",
+            "security.protocol" : "PLAINTEXT",
+            "max-uncommit-offset-wait" : "1 secs",
+            "sasl.mechanism" : "GSSAPI",
+            "sasl.token.auth" : "false",
+            "honor-transactions" : "true",
+            "Communications Timeout" : "60 secs",
+            "topic" : "transactions",
+            "message-header-encoding" : "UTF-8",
+            "key-attribute-encoding" : "utf-8",
+            "auto.offset.reset" : "latest"
+          },
+          "propertyDescriptors" : {
+            "header-name-regex" : {
+              "displayName" : "Headers to Add as Attributes (Regex)",
+              "identifiesControllerService" : false,
+              "name" : "header-name-regex",
+              "sensitive" : false
+            },
+            "sasl.username" : {
+              "displayName" : "Username",
+              "identifiesControllerService" : false,
+              "name" : "sasl.username",
+              "sensitive" : false
+            },
+            "max.poll.records" : {
+              "displayName" : "Max Poll Records",
+              "identifiesControllerService" : false,
+              "name" : "max.poll.records",
+              "sensitive" : false
+            },
+            "group.id" : {
+              "displayName" : "Group ID",
+              "identifiesControllerService" : false,
+              "name" : "group.id",
+              "sensitive" : false
+            },
+            "bootstrap.servers" : {
+              "displayName" : "Kafka Brokers",
+              "identifiesControllerService" : false,
+              "name" : "bootstrap.servers",
+              "sensitive" : false
+            },
+            "topic_type" : {
+              "displayName" : "Topic Name Format",
+              "identifiesControllerService" : false,
+              "name" : "topic_type",
+              "sensitive" : false
+            },
+            "sasl.kerberos.principal" : {
+              "displayName" : "Kerberos Principal",
+              "identifiesControllerService" : false,
+              "name" : "sasl.kerberos.principal",
+              "sensitive" : false
+            },
+            "sasl.kerberos.service.name" : {
+              "displayName" : "Kerberos Service Name",
+              "identifiesControllerService" : false,
+              "name" : "sasl.kerberos.service.name",
+              "sensitive" : false
+            },
+            "security.protocol" : {
+              "displayName" : "Security Protocol",
+              "identifiesControllerService" : false,
+              "name" : "security.protocol",
+              "sensitive" : false
+            },
+            "kerberos-credentials-service" : {
+              "displayName" : "Kerberos Credentials Service",
+              "identifiesControllerService" : true,
+              "name" : "kerberos-credentials-service",
+              "sensitive" : false
+            },
+            "ssl.context.service" : {
+              "displayName" : "SSL Context Service",
+              "identifiesControllerService" : true,
+              "name" : "ssl.context.service",
+              "sensitive" : false
+            },
+            "max-uncommit-offset-wait" : {
+              "displayName" : "Max Uncommitted Time",
+              "identifiesControllerService" : false,
+              "name" : "max-uncommit-offset-wait",
+              "sensitive" : false
+            },
+            "sasl.mechanism" : {
+              "displayName" : "SASL Mechanism",
+              "identifiesControllerService" : false,
+              "name" : "sasl.mechanism",
+              "sensitive" : false
+            },
+            "sasl.token.auth" : {
+              "displayName" : "Token Auth",
+              "identifiesControllerService" : false,
+              "name" : "sasl.token.auth",
+              "sensitive" : false
+            },
+            "sasl.kerberos.keytab" : {
+              "displayName" : "Kerberos Keytab",
+              "identifiesControllerService" : false,
+              "name" : "sasl.kerberos.keytab",
+              "sensitive" : false
+            },
+            "honor-transactions" : {
+              "displayName" : "Honor Transactions",
+              "identifiesControllerService" : false,
+              "name" : "honor-transactions",
+              "sensitive" : false
+            },
+            "Communications Timeout" : {
+              "displayName" : "Communications Timeout",
+              "identifiesControllerService" : false,
+              "name" : "Communications Timeout",
+              "sensitive" : false
+            },
+            "topic" : {
+              "displayName" : "Topic Name(s)",
+              "identifiesControllerService" : false,
+              "name" : "topic",
+              "sensitive" : false
+            },
+            "message-header-encoding" : {
+              "displayName" : "Message Header Encoding",
+              "identifiesControllerService" : false,
+              "name" : "message-header-encoding",
+              "sensitive" : false
+            },
+            "sasl.password" : {
+              "displayName" : "Password",
+              "identifiesControllerService" : false,
+              "name" : "sasl.password",
+              "sensitive" : true
+            },
+            "message-demarcator" : {
+              "displayName" : "Message Demarcator",
+              "identifiesControllerService" : false,
+              "name" : "message-demarcator",
+              "sensitive" : false
+            },
+            "key-attribute-encoding" : {
+              "displayName" : "Key Attribute Encoding",
+              "identifiesControllerService" : false,
+              "name" : "key-attribute-encoding",
+              "sensitive" : false
+            },
+            "auto.offset.reset" : {
+              "displayName" : "Offset Reset",
+              "identifiesControllerService" : false,
+              "name" : "auto.offset.reset",
+              "sensitive" : false
+            }
+          },
+          "runDurationMillis" : 0,
+          "scheduledState" : "ENABLED",
+          "schedulingPeriod" : "0 sec",
+          "schedulingStrategy" : "TIMER_DRIVEN",
+          "style" : { },
+          "type" : "org.apache.nifi.processors.kafka.pubsub.ConsumeKafka_2_0",
+          "yieldDuration" : "1 sec"
+        } ],
+        "remoteProcessGroups" : [ ],
+        "variables" : { }
+      },
+      "flowEncodingVersion" : "1.0",
+      "parameterContexts" : { }
+    }
+  }
+}
