@@ -136,8 +136,8 @@
           "name" : "PutMongo",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 680.0,
-            "y" : 592.0
+            "x" : 656.0,
+            "y" : 584.0
           },
           "properties" : {
             "Upsert" : "false",
