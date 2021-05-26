@@ -27,6 +27,7 @@
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
+          "partitioningAttribute" : "",
           "prioritizers" : [ ],
           "selectedRelationships" : [ "success" ],
           "source" : {
@@ -56,6 +57,7 @@
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
+          "partitioningAttribute" : "",
           "prioritizers" : [ ],
           "selectedRelationships" : [ "success" ],
           "source" : {
@@ -85,6 +87,7 @@
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
+          "partitioningAttribute" : "",
           "prioritizers" : [ ],
           "selectedRelationships" : [ "splits" ],
           "source" : {
@@ -114,6 +117,7 @@
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
+          "partitioningAttribute" : "",
           "prioritizers" : [ ],
           "selectedRelationships" : [ "success" ],
           "source" : {
@@ -143,6 +147,7 @@
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
+          "partitioningAttribute" : "",
           "prioritizers" : [ ],
           "selectedRelationships" : [ "success" ],
           "source" : {
@@ -172,6 +177,7 @@
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
+          "partitioningAttribute" : "",
           "prioritizers" : [ ],
           "selectedRelationships" : [ "matched" ],
           "source" : {
@@ -201,6 +207,7 @@
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
           "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
           "name" : "",
+          "partitioningAttribute" : "",
           "prioritizers" : [ ],
           "selectedRelationships" : [ "success" ],
           "source" : {
@@ -263,20 +270,6 @@
         }, {
           "componentType" : "LABEL",
           "groupIdentifier" : "abb7a0b3-56d2-38e3-bad3-c24a2989ca56",
-          "height" : 56.999996185302734,
-          "identifier" : "667a9e84-0c21-30f0-93c0-c1794988231f",
-          "label" : "Generates a test CSV file with content.\n<--",
-          "position" : {
-            "x" : 795.9999917116436,
-            "y" : 12.140004335007745
-          },
-          "style" : {
-            "font-size" : "12px"
-          },
-          "width" : 217.99996948242188
-        }, {
-          "componentType" : "LABEL",
-          "groupIdentifier" : "abb7a0b3-56d2-38e3-bad3-c24a2989ca56",
           "height" : 73.0,
           "identifier" : "696d96b2-e35a-3273-9f99-ef87d7a87110",
           "label" : "Builds a CQL INSERT statement with\nexplicit values. Also could use UpdateAttribute\nin order to use prepared statements.\n<--",
@@ -288,6 +281,20 @@
             "font-size" : "12px"
           },
           "width" : 271.9999694824219
+        }, {
+          "componentType" : "LABEL",
+          "groupIdentifier" : "abb7a0b3-56d2-38e3-bad3-c24a2989ca56",
+          "height" : 56.999996185302734,
+          "identifier" : "667a9e84-0c21-30f0-93c0-c1794988231f",
+          "label" : "Generates a test CSV file with content.\n<--",
+          "position" : {
+            "x" : 795.9999917116436,
+            "y" : 12.140004335007745
+          },
+          "style" : {
+            "font-size" : "12px"
+          },
+          "width" : 217.99996948242188
         }, {
           "componentType" : "LABEL",
           "groupIdentifier" : "abb7a0b3-56d2-38e3-bad3-c24a2989ca56",
@@ -870,7 +877,7 @@
           "name" : "ExecuteScript",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 968.0,
+            "x" : 1080.0,
             "y" : 680.0
           },
           "properties" : {
