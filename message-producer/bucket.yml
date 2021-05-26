@@ -1,6 +1,6 @@
 flows:
-  f37da8e1-f4e8-4b8e-9dcf-e44da92d511e: {ver: 6, file: message-producer.snapshot,
-    comments: '', author: anonymous, created: 1622062758177, flowName: message-producer,
+  f37da8e1-f4e8-4b8e-9dcf-e44da92d511e: {ver: 7, file: message-producer.snapshot,
+    comments: '', author: anonymous, created: 1622063508395, flowName: message-producer,
     flowDesc: ''}
 layoutVer: 1
 bucketId: b2226726-f1da-43a4-b14e-9a296c46d78b

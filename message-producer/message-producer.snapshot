@@ -170,8 +170,8 @@
             "y" : 112.0
           },
           "properties" : {
-            "excel-extract-first-row" : "0",
-            "CSV Format" : "custom",
+            "excel-extract-first-row" : "1",
+            "CSV Format" : "excel",
             "Quote Character" : "\"",
             "Include Header Line" : "false",
             "Value Separator" : ",",
