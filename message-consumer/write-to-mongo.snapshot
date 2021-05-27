@@ -15,13 +15,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+            "groupId" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
             "id" : "1f450c20-a43b-37d1-96e6-7ce137611389",
             "name" : "ExtractText",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+          "groupIdentifier" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
           "identifier" : "4ad839c3-b1a7-37e0-b565-e4576fbc1221",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -32,7 +32,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+            "groupId" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
             "id" : "8f79137d-aa29-34b0-a8a2-15a9f6959e39",
             "name" : "Read Kafka Topic",
             "type" : "PROCESSOR"
@@ -48,13 +48,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+            "groupId" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
             "id" : "3474e9f2-749b-3f8a-b195-df1736e4a81e",
             "name" : "PutMongo",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+          "groupIdentifier" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
           "identifier" : "9f1cbd0d-430d-3c16-ad24-f0aa842e17a1",
           "labelIndex" : 0,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -65,7 +65,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+            "groupId" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
             "id" : "8beb4e4a-5e7c-3f2f-8fb1-2e1d8949b85a",
             "name" : "AttributesToJSON",
             "type" : "PROCESSOR"
@@ -81,13 +81,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+            "groupId" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
             "id" : "8beb4e4a-5e7c-3f2f-8fb1-2e1d8949b85a",
             "name" : "AttributesToJSON",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+          "groupIdentifier" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
           "identifier" : "189ac481-678e-329b-8882-90e4ef1bb117",
           "labelIndex" : 0,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -98,7 +98,7 @@
           "selectedRelationships" : [ "matched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+            "groupId" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
             "id" : "1f450c20-a43b-37d1-96e6-7ce137611389",
             "name" : "ExtractText",
             "type" : "PROCESSOR"
@@ -109,14 +109,14 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+        "identifier" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "Escrever no Mongo",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 417.0,
-          "y" : 208.0
+          "x" : 412.0,
+          "y" : 145.0
         },
         "processGroups" : [ ],
         "processors" : [ {
@@ -131,7 +131,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+          "groupIdentifier" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
           "identifier" : "3474e9f2-749b-3f8a-b195-df1736e4a81e",
           "name" : "PutMongo",
           "penaltyDuration" : "30 sec",
@@ -249,7 +249,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+          "groupIdentifier" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
           "identifier" : "8beb4e4a-5e7c-3f2f-8fb1-2e1d8949b85a",
           "name" : "AttributesToJSON",
           "penaltyDuration" : "30 sec",
@@ -314,7 +314,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+          "groupIdentifier" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
           "identifier" : "1f450c20-a43b-37d1-96e6-7ce137611389",
           "name" : "ExtractText",
           "penaltyDuration" : "30 sec",
@@ -492,7 +492,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "b172dafb-b8b4-337f-9cdf-768f523df557",
+          "groupIdentifier" : "11b3c847-6f9b-3bbc-b023-729bceb6b4da",
           "identifier" : "8f79137d-aa29-34b0-a8a2-15a9f6959e39",
           "name" : "Read Kafka Topic",
           "penaltyDuration" : "30 sec",
@@ -514,7 +514,7 @@
             "topic" : "transactions",
             "message-header-encoding" : "UTF-8",
             "key-attribute-encoding" : "utf-8",
-            "auto.offset.reset" : "latest"
+            "auto.offset.reset" : "earliest"
           },
           "propertyDescriptors" : {
             "header-name-regex" : {
